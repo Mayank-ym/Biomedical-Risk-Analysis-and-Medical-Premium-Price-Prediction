@@ -3,10 +3,9 @@ title: <center><b>CSE3506 - Essentials of Data Analytics - G2<br>Review - 3</b><
 output: html_document
 ---
 <pre>
-<b> Name: Raghav Phophaliya - 20BCE1140</b>
-<b>       Sidhant Singh - 20BCE1625</b>
-<b>       Akshit Jain - 20BCE1818</b>
-<b>       Radhika Solanki - 20BPS1044</b>
+<b> Name: Mayank Yadav - 20BCE1674</b>
+<b>       Soumik Kabiraj - 20BCE1504</b>
+<b>       Panav Sinha - 20BCE1640</b>
 <b>
 </pre>
 <br><br>
@@ -667,12 +666,4 @@ r23 <- R2(predictTest2, test$PremiumPrice)
 cat(paste("R-squared of model is:", r23))
 ```
 
-<h3>Linear regression</h3>
-```{r}
-model5 <- lm(PremiumPrice ~ ., data=train)
-summary(model5)
-predicted <- predict(model5, test)
-RMSE <- sqrt(mean((predicted-test$PremiumPrice)^2))
-RMSE
-```
 
